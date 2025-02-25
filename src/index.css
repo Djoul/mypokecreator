@@ -1,0 +1,70 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 71.6% 73.7%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 71.6% 73.7%;
+    --radius: 0.75rem;
+
+    --pokemon-normal: 168, 168, 120;
+    --pokemon-fire: 240, 128, 48;
+    --pokemon-water: 104, 144, 240;
+    --pokemon-electric: 248, 208, 48;
+    --pokemon-grass: 120, 200, 80;
+    --pokemon-ice: 152, 216, 216;
+    --pokemon-fighting: 192, 48, 40;
+    --pokemon-poison: 160, 64, 160;
+    --pokemon-ground: 224, 192, 104;
+    --pokemon-flying: 168, 144, 240;
+    --pokemon-psychic: 248, 88, 136;
+    --pokemon-bug: 168, 184, 32;
+    --pokemon-rock: 184, 160, 56;
+    --pokemon-ghost: 112, 88, 152;
+    --pokemon-dragon: 112, 56, 248;
+    --pokemon-dark: 112, 88, 72;
+    --pokemon-steel: 184, 184, 208;
+    --pokemon-fairy: 238, 153, 172;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
