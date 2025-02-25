@@ -124,6 +124,10 @@ const Index = () => {
           </div>
         )}
       </div>
+      
+      <footer className="absolute bottom-4 left-0 right-0 text-center text-sm text-gray-500">
+        Pokémon is © 1995-2025 Nintendo.
+      </footer>
     </div>
   );
 };
