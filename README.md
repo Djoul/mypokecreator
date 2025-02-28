@@ -3,6 +3,7 @@
 ## Project info
 
 **URL**: https://lovable.dev/projects/859de95a-5b84-4bf4-9167-bb87db200ce5
+**Website URL**: https://mypokecreator.com
 
 ## How can I edit this code?
 
